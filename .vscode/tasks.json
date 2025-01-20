@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile and run",      "type": "shell",
+      "command": "g++",
+      "args": [
+        "${file}",
+        "-o",
+        "${workspaceFolder}/jspwTest",
+        "&&",
+        "${workspaceFolder}/jspwTest",
+        "<",
+        "input.txt",
+        ">",
+        "output.txt"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "never"
+      }
+    }
+  ]
+}
