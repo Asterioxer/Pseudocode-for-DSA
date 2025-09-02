@@ -15,7 +15,7 @@ void priority_queue() {
     pq.push(8); //{8,5,2}
     pq.emplace(10); //{10,8,5,2}
 
-    cout << pq.top(); // prints 10
+    cout << pq.top(); // prints 10, sort directly to the top of the queue, in order of the maximum value element
 
     pq.pop(); //{8,5,2}
 
